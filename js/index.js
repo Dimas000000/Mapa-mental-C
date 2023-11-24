@@ -1,5 +1,6 @@
 $(document).ready(()=>{
     $('#header-show-btn').hide();
+    $('body > h2').hide();
 
     $('#header-hide-btn').click(()=>{
     $('#header-show-btn').show();
@@ -16,5 +17,11 @@ $(document).ready(()=>{
             'height': '120vh',
             'grid-template': 'min(5vw, 10vh) 100vh min(5vw, 10vh) / 1fr'
         });
+    });
+    $('section').hover(()=>{
+        $('body > h2').show();
+    },
+    ()=>{
+        $('body > h2').hide();
     });
 });
