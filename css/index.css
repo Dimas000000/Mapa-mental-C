@@ -15,18 +15,41 @@
 body{
     background-color: rgb(200, 200, 200);
 }
+
+/* Header */
+
 header{
     background-color: rgb(50, 50, 50);
     color: white;
 }
 #header-hide-btn{
     filter: invert(1);
+    background-color: rgba(255, 255, 255, 0.15);
+}
+#header-hide-btn:hover{
+    background-color: rgba(255, 255, 255, 0.25);
 }
 #header-show-btn{
+    background-color: rgba(0, 0, 0, 0.15);
+}
+#header-show-btn:hover{
     background-color: rgba(0, 0, 0, 0.25);
 }
+
+/* Main */
+
+#title{
+    background-color: rgba(0, 0, 0, 0.15);
+}
+.topico{
+    background-color: rgba(0, 0, 0, 0.25);
+}
+
+/* Footer */
+
 footer{
     background-color: rgb(50, 50, 50);
+    color: white;
 }
 
 /* ----- Measures ----- */
@@ -34,7 +57,7 @@ footer{
 body{
     height: 120vh;
     display: grid;
-    grid-template: min(5vw, 10vh) 1fr min(5vw, 10vh) / 1fr;
+    grid-template: min(5vw, 10vh) 100vh min(5vw, 10vh) / 1fr;
 }
 
 /* Header */
@@ -46,12 +69,13 @@ header{
 #header-hide-btn{
     width: min(4vw, 8vh);
     margin: auto;
+    border-radius: 20vw;
     transform: rotate(180deg);
 }
 #header-show-btn{
-    position: fixed;
-    left: 1vw;
-    top: 1vw;
+    position: absolute;
+    left: min(1vh, 2vw);
+    top: min(1vh, 2vw);
     width: min(4vw, 8vh);
     margin: auto;
     border-radius: 20vw;
@@ -63,6 +87,59 @@ header > h2{
 
 /* Main */
 
+main{
+    margin: min(3vw, 6vh);
+    display: grid;
+    grid-template: 1fr 2vh 1fr 2vh 1fr 2vh 1fr 2vh 1fr 2vh 1fr / 1fr 10vw 1fr 10vw 1fr;
+}
+section{
+    border-radius: min(1vw, 2vh);
+}
+#title{
+    grid-area: 5/3/8/3;
+}
+#topico-1{
 
+}
+#topico-2{
+    
+}
+#topico-3{
+    
+}
+#topico-4{
+    
+}
+#topico-5{
+    
+}
+#topico-6{
+    
+}
+#topico-7{
+    
+}
+#topico-8{
+    
+}
+#topico-9{
+    
+}
+#topico-10{
+    
+}
+#topico-11{
+    
+}
+#topico-12{
+    
+}
 
 /* Footer */
+
+footer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}

@@ -6,7 +6,7 @@ $(document).ready(()=>{
     $('header').hide();
         $('body').css({
             'height': '110vh',
-            'grid-template': '1fr min(5vw, 10vh) / 1fr'
+            'grid-template': '100vh min(5vw, 10vh) / 1fr'
         });
     });
     $('#header-show-btn').click(()=>{
@@ -14,7 +14,7 @@ $(document).ready(()=>{
     $('header').show();
         $('body').css({
             'height': '120vh',
-            'grid-template': 'min(5vw, 10vh) 1fr min(5vw, 10vh) / 1fr'
+            'grid-template': 'min(5vw, 10vh) 100vh min(5vw, 10vh) / 1fr'
         });
     });
 });
